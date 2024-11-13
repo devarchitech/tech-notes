@@ -37,10 +37,10 @@ Working Directory   ||  Staging Area (index)   ||  Local Repository (HEAD)     |
 -> git push origin => pushes changes from Local repository to Remote repository
 -> git push origin HEAD:dev => creates dev branch on remote repository and pushes local changes to remote dev branch
 
--> git pull - gets all changes of local repository's branch from remote repository and updates working directory
+-> git pull => gets all changes of local repository's branch from remote repository and updates working directory
 
--> git fetch - gets info about all changes (not the changes) of all branches from remote repository to local repository only.
--> git merge - pulls actual changes from current branch and update working directory, resolving any conflicts.
+-> git fetch => gets info about all changes (not the changes) of all branches from remote repository to local repository only.
+-> git merge "branch_name" => pulls actual changes from current branch and update working directory, resolving any conflicts.
 :: git fetch allows user to switch to different branch using "git switch"
 
 ~~~ working on local repository that doesn't exist in GITHUB repositories
@@ -62,16 +62,22 @@ git push -u origin main
 -> git clean =>
 
 -> git reset --hard/soft "commit id" => resets back to that particular commit. files and succesive commit logs will no longer be part of index.
--> git rebase
--> git revert
+-> git rebase "branch name" => merge without commit history
+:: git rebase -i "commit id" => squashing commit history
+-> git revert "commit id" => removes that particular commit from the index whereever it is.
+-> git cherry-pick "commit id" => brings back that particular commit to the index.
+-> git stash [pop]
+-> git branch --list
 
 
 
 BASH window shortcuts
 *********************
--> ctrl+L will clear BASH window
+-> ctrl+L -> will clear BASH window
 -> touch file.txt -> will create a file if it doesn't exist
-->
+-> :W -> write
+-> :q -> quit
+-> :q! -> quit all
 
 
 
