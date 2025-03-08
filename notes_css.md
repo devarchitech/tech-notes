@@ -552,3 +552,16 @@ Responsive pagination ensures that pagination links are displayed in an optimal 
     margin: 5px 0;
   }
 }
+
+/* ****************************************************
+21. Hover, transitions and shadows
+
+/* psuedo class */
+selector:hover {
+  property value to change the behaviour of the selector
+  transition : speed at which the change should occurs
+  box-shadow : x y blur color rgba(r, g, b, opacity)
+}
+
+
+**************************************************** */
